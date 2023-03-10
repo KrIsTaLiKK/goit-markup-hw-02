@@ -17,6 +17,7 @@ body {
   font-weight: 500;
   font-style: normal;
   background-color: var(--color-white);
+  color: var(--color-slate);
 }
 
 .link {
@@ -29,10 +30,10 @@ body {
 
 /* Logo */
 .logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-iris);
@@ -42,10 +43,10 @@ body {
   color: var(--color-navy-blue);
 }
 
-.web-footer-logo,
+/* .web-footer-logo,
 .studio-footer-logo {
-  line-height: 1.16;
-}
+  line-height: 1.17;
+} */
 
 .studio-footer-logo {
   color: var(--color-cloud);
@@ -60,13 +61,15 @@ body {
   color: var(--color-navy-blue);
 }
 
-.address-link {
+.header-address {
   font-style: normal;
+}
+.address-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--color-slate);
+  color: inherit;
 }
 .header-link:is(:hover, :focus),
 .address-link:is(:hover, :focus) {
@@ -83,11 +86,13 @@ body {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  text-align: center;
   color: var(--color-white);
 }
 
 .hero-btn {
   font-family: inherit;
+  font-weight: inherit;
   background-color: var(--color-iris);
   font-size: 16px;
   line-height: 1.5;
@@ -103,9 +108,8 @@ body {
 
 /* Our advantages, team, portfolio */
 
-.advantages-title,
-.member-title,
-.portfolio-title {
+.third-title-section {
+  font-weight: inherit;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -123,7 +127,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--color-slate);
+  color: inherit;
 }
 
 /* What are we doing, Our team */
@@ -131,11 +135,12 @@ body {
   background-color: var(--color-cloud);
 }
 
-.second-section-title {
+.second-title-section {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
   text-transform: capitalize;
   color: var(--color-navy-blue);
 }
